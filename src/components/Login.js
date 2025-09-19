@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import  "./Login.css"
 
-const API = "http://localhost:4000"
+const API = "https://call-app-server.onrender.com/"
 
 const Login = ({ onLogin }) => {
   const [isRegister, setIsRegister] = useState(false);

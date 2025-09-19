@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:4000');
+const socket = io('https://call-app-server.onrender.com/');
 
 function AudioCallComponent() {
   const localAudioRef = useRef(null);
