@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     navigator.mediaDevices
-      .getUserMedia({ video: false, audio: true })
+      .getUserMedia({ video: true, audio: true })
       .then((mediaStream) => {
         setStream(mediaStream);
         myVideoRef.current.srcObject = mediaStream;
